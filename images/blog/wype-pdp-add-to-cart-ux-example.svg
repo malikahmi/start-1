@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%" style="border-radius: 16px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Background Canvas Pattern -->
+    <linearGradient id="pdpBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E8E5DF" />
+      <stop offset="100%" stop-color="#DFDDD6" />
+    </linearGradient>
+
+    <!-- Glowing effect for Add To Cart Callout -->
+    <filter id="cartGlow" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#FFFFFF" flood-opacity="0.95"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#A3E635" flood-opacity="0.4"/>
+    </filter>
+
+    <!-- Bottle Metallic Gradient -->
+    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B0B5B9" />
+      <stop offset="35%" stop-color="#E2E8F0" />
+      <stop offset="70%" stop-color="#94A3B8" />
+      <stop offset="100%" stop-color="#64748B" />
+    </linearGradient>
+
+    <!-- Organic Botanical Pattern on Bottle -->
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2DD4BF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#84CC16" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="900" rx="16" fill="url(#pdpBg)" />
+
+  <!-- TOP NAVIGATION BAR -->
+  <rect x="0" y="0" width="1200" height="70" fill="#E8E5DF" />
+  <text x="45" y="44" fill="#1C3835" font-size="24" font-weight="900" letter-spacing="-0.5">wype*</text>
+  
+  <g fill="#2D4A47" font-size="14" font-weight="500">
+    <text x="240" y="42">Shop ▾</text>
+    <text x="320" y="42">How it Works</text>
+    <text x="430" y="42">Our Story</text>
+    <text x="520" y="42">Refer a Friend</text>
+    <text x="640" y="42">The Suppository*</text>
+  </g>
+
+  <g transform="translate(900, 24)">
+    <text x="0" y="18" fill="#2D4A47" font-size="14" font-weight="600">🇬🇧 UK ▾</text>
+    <!-- User Icon -->
+    <circle cx="80" cy="14" r="5" stroke="#2D4A47" stroke-width="1.8" fill="none"/>
+    <path d="M72,24 C72,20 75,18 80,18 C85,18 88,20 88,24" stroke="#2D4A47" stroke-width="1.8" fill="none"/>
+    <!-- Bag Icon -->
+    <rect x="110" y="8" width="14" height="15" rx="2" stroke="#2D4A47" stroke-width="1.8" fill="none"/>
+    <path d="M113,8 C113,4 121,4 121,8" stroke="#2D4A47" stroke-width="1.8" fill="none"/>
+    <!-- Shop Now CTA Button -->
+    <rect x="145" y="-4" width="110" height="36" rx="18" fill="#84CC16" />
+    <text x="200" y="19" fill="#1C3835" font-size="12" font-weight="800" text-anchor="middle" letter-spacing="0.5">SHOP NOW</text>
+  </g>
+
+  <!-- MAIN PRODUCT LAYOUT -->
+
+  <!-- LEFT COLUMN: Studio Product Photography Card -->
+  <g transform="translate(50, 95)">
+    <!-- Big Product Image Box -->
+    <rect width="520" height="580" rx="8" fill="#DFDDD6" />
+    
+    <!-- Stylized Wype Dispenser Bottle -->
+    <g transform="translate(200, 120)">
+      <!-- Dispenser Pump Head -->
+      <rect x="25" y="0" width="70" height="135" rx="35" fill="#FFFFFF" />
+      <!-- Push Button Teal -->
+      <circle cx="60" cy="50" r="22" fill="#0D9488" />
+      <circle cx="60" cy="50" r="18" fill="#14B8A6" />
+      <!-- Collar Ring -->
+      <rect x="25" y="130" width="70" height="12" fill="#0D9488" />
+      <!-- Aluminum Body -->
+      <rect x="25" y="142" width="70" height="190" rx="10" fill="url(#metalGrad)" />
+      <!-- Wave Graphic on Bottle -->
+      <path d="M25,200 Q45,170 70,220 T95,210 L95,310 Q65,330 25,280 Z" fill="url(#waveGrad)" opacity="0.6"/>
+      <path d="M30,240 Q60,210 80,260 L90,300 L25,320 Z" fill="#065F46" opacity="0.4"/>
+      <!-- Soft Shadow -->
+      <ellipse cx="60" cy="340" rx="45" ry="10" fill="#000000" opacity="0.12"/>
+    </g>
+  </g>
+
+  <!-- Secondary Photo Thumbnails Below -->
+  <g transform="translate(50, 695)">
+    <rect x="0" y="0" width="250" height="180" rx="8" fill="#4E8C82" opacity="0.85"/>
+    <text x="125" y="95" fill="#FFFFFF" font-size="14" font-weight="600" text-anchor="middle">Open Cap Refill View</text>
+    
+    <rect x="270" y="0" width="250" height="180" rx="8" fill="#C5BAAF" opacity="0.9"/>
+    <text x="395" y="95" fill="#2D4A47" font-size="14" font-weight="600" text-anchor="middle">In-Hand Ergonomics</text>
+  </g>
+
+  <!-- RIGHT COLUMN: PDP Buy Box & Frictionless Checkout Flow -->
+  <g transform="translate(620, 115)">
+    <!-- Breadcrumbs -->
+    <text x="0" y="10" fill="#5F6B69" font-size="11" font-weight="600" letter-spacing="0.2">
+      SHOP &gt; Extras One off products Subscription extras &gt; (New and Improved!) Starter Kit
+    </text>
+
+    <!-- Product Title (Serif Style) -->
+    <text x="0" y="65" fill="#1C3835" font-size="34" font-weight="800" font-family="Georgia, serif" letter-spacing="-0.5">
+      (New and Improved!)
+    </text>
+    <text x="0" y="105" fill="#1C3835" font-size="34" font-weight="800" font-family="Georgia, serif" letter-spacing="-0.5">
+      Starter Kit
+    </text>
+
+    <!-- Package Quantity -->
+    <text x="0" y="140" fill="#5F6B69" font-size="13" font-weight="600">
+      1 x Original Wype (100ml), 1 x Reusable Applicator
+    </text>
+
+    <!-- Value Prop Description -->
+    <text x="0" y="175" fill="#3D504E" font-size="13" font-weight="400">Start your Wype journey with our (new and improved!) reusable</text>
+    <text x="0" y="195" fill="#3D504E" font-size="13" font-weight="400">applicator and its trusty infinitely recyclable refill!</text>
+    
+    <text x="0" y="230" fill="#3D504E" font-size="13" font-weight="400">Our natural gel sits on toilet tissue without breaking it down, and it is</text>
+    <text x="0" y="250" fill="#3D504E" font-size="13" font-weight="400">100% flushable. Once you've discovered that Wype clean feeling, dry</text>
+    <text x="0" y="270" fill="#3D504E" font-size="13" font-weight="400">toilet roll will never feel the same. When your refill is empty, simpl... <tspan text-decoration="underline" font-weight="600">Show More</tspan></text>
+
+    <!-- HIGHLIGHTED CONVERSION ELEMENT: ILLUMINATED ADD-TO-CART BUTTON -->
+    <g transform="translate(0, 305)">
+      <!-- Outer White Glow Card -->
+      <rect x="-10" y="-10" width="410" height="78" rx="20" fill="#FFFFFF" filter="url(#cartGlow)" />
+      
+      <!-- Primary Vibrant CTA Button -->
+      <rect x="0" y="0" width="390" height="58" rx="29" fill="#CCFF00" />
+      
+      <!-- CTA Label -->
+      <text x="40" y="36" fill="#1C3835" font-size="14" font-weight="900" letter-spacing="1">ADD TO CART</text>
+      <!-- Clear Integrated Price -->
+      <text x="350" y="36" fill="#1C3835" font-size="15" font-weight="800" text-anchor="end">£10.00</text>
+    </g>
+
+    <!-- TRUST & PAYMENT ICONS ROW -->
+    <g transform="translate(70, 395)">
+      <!-- Visa -->
+      <rect x="0" y="0" width="38" height="24" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+      <text x="19" y="16" fill="#1A1F71" font-size="10" font-weight="900" text-anchor="middle" font-style="italic">VISA</text>
+      
+      <!-- Mastercard -->
+      <rect x="46" y="0" width="38" height="24" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+      <circle cx="61" cy="12" r="6" fill="#EB001B" opacity="0.9"/>
+      <circle cx="69" cy="12" r="6" fill="#F79E1B" opacity="0.9"/>
+
+      <!-- Apple Pay -->
+      <rect x="92" y="0" width="38" height="24" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+      <text x="111" y="16" fill="#000000" font-size="9" font-weight="700" text-anchor="middle">Pay</text>
+
+      <!-- Google Pay -->
+      <rect x="138" y="0" width="38" height="24" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+      <text x="157" y="16" fill="#4285F4" font-size="9" font-weight="700" text-anchor="middle">GPay</text>
+
+      <!-- PayPal -->
+      <rect x="184" y="0" width="38" height="24" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+      <text x="203" y="16" fill="#003087" font-size="9" font-weight="900" text-anchor="middle" font-style="italic">P</text>
+
+      <!-- Amazon Pay -->
+      <rect x="230" y="0" width="46" height="24" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+      <text x="253" y="15" fill="#232F3E" font-size="8" font-weight="800" text-anchor="middle">amazon</text>
+    </g>
+
+    <!-- EXPANDABLE ACCORDIONS -->
+    <!-- Divider -->
+    <line x1="0" y1="445" x2="400" y2="445" stroke="#1C3835" stroke-width="1.2" />
+    <text x="0" y="470" fill="#1C3835" font-size="16" font-weight="700">Full list of ingredients</text>
+    
+    <text x="0" y="505" fill="#1C3835" font-size="12" font-weight="800" letter-spacing="0.5">ORIGINAL WYPE</text>
+    
+    <text x="0" y="530" fill="#3D504E" font-size="11" font-weight="400">Aqua (Water), Glycerin**, Xanthan Gum, Decyl Glucoside, Propanediol,</text>
+    <text x="0" y="546" fill="#3D504E" font-size="11" font-weight="400">Tocopherol (Vitamin E), Aloe Barbadensis Leaf Juice Powder*,</text>
+    <text x="0" y="562" fill="#3D504E" font-size="11" font-weight="400">Chamomilla Recutita (Chamomile) Flower Extract*, Cocos Nucifera</text>
+    <text x="0" y="578" fill="#3D504E" font-size="11" font-weight="400">(Coconut) Fruit Extract, Bambusa Tuldoides (Bamboo) Leaf Extract,</text>
+    <text x="0" y="594" fill="#3D504E" font-size="11" font-weight="400">Helianthus Annuus Seed Oil, Sodium Benzoate, Benzyl Alcohol,</text>
+    <text x="0" y="610" fill="#3D504E" font-size="11" font-weight="400">Potassium Sorbate, Citric Acid, Dehydroacetic Acid.</text>
+
+    <text x="0" y="640" fill="#3D504E" font-size="11" font-weight="500">*from Organic Agriculture.</text>
+    <text x="0" y="660" fill="#3D504E" font-size="11" font-weight="500">**made Using Organic Ingredients.</text>
+
+    <!-- Shipping & Returns Accordion -->
+    <line x1="0" y1="695" x2="400" y2="695" stroke="#1C3835" stroke-width="1.2" />
+    <text x="0" y="725" fill="#1C3835" font-size="16" font-weight="700">Shipping &amp; Returns</text>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# OpenAI ads crawler: must be allowed or ChatGPT ad landing pages can fail review
+User-agent: OAI-AdsBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot-Extended
+Allow: /
+
+Sitemap: https://eceez.com/sitemap.xml
+
+# AI discovery files (comments — not parsed as directives)
+# llms.txt: https://eceez.com/llms.txt
+# ai.txt: https://eceez.com/ai.txt

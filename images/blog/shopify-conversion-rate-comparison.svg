@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%" style="border-radius: 16px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141B33" />
+      <stop offset="100%" stop-color="#0B0F1F" />
+    </linearGradient>
+
+    <!-- Shopify Bar Gradient -->
+    <linearGradient id="shopifyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#CCFF00" />
+      <stop offset="40%" stop-color="#99E866" />
+      <stop offset="100%" stop-color="#38A169" />
+    </linearGradient>
+
+    <!-- Competitor Bar Gradient -->
+    <linearGradient id="compGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#1D4ED8" />
+    </linearGradient>
+
+    <!-- Glow Filter for Shopify Badge -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#CCFF00" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="675" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Main Headline -->
+  <text x="600" y="160" text-anchor="middle" fill="#FFFFFF" font-size="44" font-weight="700" letter-spacing="-0.5">
+    Shopify converts up to <tspan fill="#6EE7B7">36% better</tspan>
+  </text>
+
+  <!-- Y-Axis Lines and Ticks -->
+  <!-- Axis Line -->
+  <line x1="300" y1="200" x2="300" y2="490" stroke="#38BDF8" stroke-width="2" stroke-opacity="0.8" />
+  
+  <!-- Tick 3 -->
+  <line x1="290" y1="200" x2="300" y2="200" stroke="#38BDF8" stroke-width="2" />
+  <text x="280" y="205" fill="#94A3B8" font-size="16" font-weight="600" text-anchor="end">3</text>
+
+  <!-- Tick 2 -->
+  <line x1="290" y1="345" x2="300" y2="345" stroke="#38BDF8" stroke-width="2" />
+  <text x="280" y="350" fill="#94A3B8" font-size="16" font-weight="600" text-anchor="end">2</text>
+
+  <!-- Tick 1 -->
+  <line x1="290" y1="490" x2="300" y2="490" stroke="#38BDF8" stroke-width="2" />
+  <text x="280" y="495" fill="#94A3B8" font-size="16" font-weight="600" text-anchor="end">1</text>
+
+  <!-- X-Axis Baseline -->
+  <line x1="300" y1="490" x2="900" y2="490" stroke="#334155" stroke-width="1.5" />
+
+  <!-- 1. SHOPIFY BAR -->
+  <!-- Chamfered Bar (left: 320, width: 110, height: 260 from y:230 to 490) -->
+  <path d="M 320,490 L 320,230 L 395,230 L 430,265 L 430,490 Z" fill="url(#shopifyGrad)" />
+  
+  <!-- Badge "+36% better conversion" -->
+  <text x="375" y="295" text-anchor="middle" fill="#0F172A" font-size="26" font-weight="800" letter-spacing="-0.5">+36%</text>
+  <text x="375" y="320" text-anchor="middle" fill="#1E293B" font-size="13" font-weight="700">better conversion</text>
+
+  <!-- Shopify Logo and Label -->
+  <g transform="translate(330, 510)">
+    <!-- Shopify Shopping Bag SVG Icon -->
+    <path d="M12.5,4 C11.5,4 10.8,4.5 10.3,5.2 L7.5,5.2 C7,5.2 6.5,5.6 6.5,6.2 L5,23 C5,23.5 5.4,24 6,24 L22,24 C22.6,24 23,23.5 23,23 L21.5,6.2 C21.5,5.6 21,5.2 20.5,5.2 L17.7,5.2 C17.2,4.5 16.5,4 15.5,4 L12.5,4 Z M13.5,6 L14.5,6 C15.1,6 15.6,6.4 15.8,7 L12.2,7 C12.4,6.4 12.9,6 13.5,6 Z" fill="#95BF47" />
+    <path d="M17.7,5.2 L12.5,4 L10.3,5.2 L12.2,7 L15.8,7 Z" fill="#5E8E3E" />
+    <!-- Text -->
+    <text x="32" y="18" fill="#FFFFFF" font-size="20" font-weight="700" letter-spacing="-0.3">shopify</text>
+  </g>
+
+
+  <!-- 2. SALESFORCE BAR -->
+  <!-- Chamfered Bar (left: 470, width: 110, height: 165 from y:325 to 490) -->
+  <path d="M 470,490 L 470,325 L 545,325 L 580,360 L 580,490 Z" fill="url(#compGrad)" />
+
+  <!-- Salesforce Logo and Label -->
+  <g transform="translate(505, 510)">
+    <!-- Cloud shape pill -->
+    <rect x="0" y="0" width="44" height="24" rx="12" fill="#00A1E0" />
+    <text x="22" y="16" fill="#FFFFFF" font-size="9" font-weight="900" text-anchor="middle" font-family="sans-serif">salesforce</text>
+  </g>
+
+
+  <!-- 3. MAGENTO BAR -->
+  <!-- Chamfered Bar (left: 620, width: 110, height: 200 from y:290 to 490) -->
+  <path d="M 620,490 L 620,290 L 695,290 L 730,325 L 730,490 Z" fill="url(#compGrad)" />
+
+  <!-- Magento Logo and Label -->
+  <g transform="translate(635, 510)">
+    <!-- Magento Orange 'M' Cube Icon -->
+    <path d="M4,18 L10,22 L10,6 L4,2 Z M18,18 L12,22 L12,6 L18,2 Z M11,13 L11,23 L11,13 Z" stroke="#EE672F" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+    <text x="24" y="17" fill="#FFFFFF" font-size="18" font-weight="600">Magento</text>
+  </g>
+
+
+  <!-- 4. BIGCOMMERCE BAR -->
+  <!-- Chamfered Bar (left: 770, width: 110, height: 180 from y:310 to 490) -->
+  <path d="M 770,490 L 770,310 L 845,310 L 880,345 L 880,490 Z" fill="url(#compGrad)" />
+
+  <!-- BigCommerce Logo and Label -->
+  <g transform="translate(780, 510)">
+    <circle cx="10" cy="11" r="9" fill="#1E293B" />
+    <path d="M7,7 L13,11 L7,15 Z" fill="#FFFFFF" />
+    <text x="25" y="16" fill="#FFFFFF" font-size="14" font-weight="800" letter-spacing="0.5">BIGCOMMERCE</text>
+  </g>
+
+
+  <!-- Footnote -->
+  <text x="600" y="605" text-anchor="middle" fill="#64748B" font-size="14" font-weight="400">
+    *Study completed in partnership with a Big Three global management consulting company
+  </text>
+</svg>
